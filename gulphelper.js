@@ -28,8 +28,8 @@ function getAssets(CONFIG, files){
 }
 
 function copyPlugin(CONFIG, folder){
-    const base = path.join('../reveal-js-plugins/', folder)
-    const destDir = path.join(CONFIG.target, 'plugin/', folder)
+    const base = path.join('..', 'reveal-js-plugins', 'src', folder)
+    const destDir = path.join(CONFIG.target, 'plugin', folder)
     console.log('Copy Plugin from', base)
 
     src(path.join(base, '*.js'))
