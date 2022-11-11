@@ -20,7 +20,7 @@ function buildTask(cb) {
 
 
 exports.build = buildTask
-exports.clean = (cb) => {helper.cleanTask(CONFIG, cb)
+exports.clean = (cb) => helper.cleanTask(CONFIG, cb)
 exports.watch = (cb) => {
     buildTask(cb)
     helper.watchTask(cb, buildTask)
