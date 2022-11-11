@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:all": "node buildAll.js"
+    "build": "gulp buildAll",
+    "deloy": "gulp deploy",
+    "clean": "gulp clean"
   },
   "repository": {
     "type": "git",
