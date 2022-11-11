@@ -91,8 +91,8 @@ function watchTask(cb, buildTask){
     ], buildTask)
 }
 
-function cleanTask(CONFIG, cb){
-    del([ CONFIG.target ])
+function cleanTask(cb){
+    del([ 'dist' ])
     cb()
 }
 

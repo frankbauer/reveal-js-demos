@@ -1,11 +1,13 @@
 const { src, dest} = require('gulp')
 const helper = require('../gulphelper.js')
+const path = require('path')
 
 const CONFIG = {
-    target: '../dist/modelViewer/'
+    target: path.join(process.cwd(), '../dist/modelViewer/')
 }
 
 function buildTask(cb) {
+    console.log(process.cwd())
     helper.copyReveal(CONFIG)
     helper.copyModelViewer(CONFIG)
     helper.copySelf(CONFIG)
@@ -18,9 +20,7 @@ function buildTask(cb) {
     cb()
 }
 
-
 exports.build = buildTask
-exports.clean = (cb) => helper.cleanTask(CONFIG, cb)
 exports.watch = (cb) => {
     buildTask(cb)
     helper.watchTask(cb, buildTask)
