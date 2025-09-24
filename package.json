@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/frankbauer/reveal-js-demos#readme",
   "dependencies": {
-    "@google/model-viewer": "^2.1.0",
-    "reveal.js": "^4.4.0"
+    "@google/model-viewer": "^4.1.0 ",
+    "reveal.js": "^5.2.1"
   },
   "devDependencies": {
     "del": "^6.0.0",
